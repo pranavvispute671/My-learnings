@@ -1,0 +1,4 @@
+Dealing with EC2 instance using Terraform
+
+
+Go to EC2 page, and get the AMAZON MACHINE IMAGE(AMI) number of the required IMAGE

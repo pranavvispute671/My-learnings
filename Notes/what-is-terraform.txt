@@ -1,0 +1,16 @@
+What is TerraForm?
+
+TerraForm is Infrastructure as Code(IaC)
+instead of a manual process to configure hardware process and OS
+tech stack for an application is provisioned through software
+
+main.tf is the entry point in terraform.
+
+terraform plan
+displays what the main.tf file will create when executed.
+
+terraform apply
+applies the changes in the main.tf file and creates the configuration mentioned in the main.tf file
+
+terraform destroy
+deletes the infra mentioned in the main.tf file
