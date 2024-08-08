@@ -11,3 +11,7 @@ resource "aws_instance" "ec-instance" {
         Name=var.ec-2-Name
     }
 }
+
+output "my-instance-id" {
+    value = aws_instance.ec-instance.id
+}
