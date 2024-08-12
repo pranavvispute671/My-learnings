@@ -16,8 +16,9 @@ resource "aws_instance" "wbservermodule" {
     }
 }
 
-resource "aws_eip" "wbserver-eip" {
-    instance = aws_instance.wbservermodule.id
+module "wbserver-eip-import" {
+  source = "../eip-module"
+  wbserver-name = aws_instance.wbservermodule.id
 }
 
 output "wbserver-publicip" {
